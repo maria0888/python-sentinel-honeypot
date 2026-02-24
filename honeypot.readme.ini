@@ -1,0 +1,62 @@
+🛡️ Python Sentinel: Honeypot & Threat Intelligence
+Este projeto consiste em uma solução de Defesa Cibernética Ativa desenvolvida em Python. Ele simula uma interface de administração vulnerável (Honeypot) para atrair atacantes, capturar suas credenciais e fornecer relatórios detalhados de geolocalização e identificação de dispositivos em tempo real via Telegram.
+
+🚀 Funcionalidades
+Hardening de Sistema: Integração com políticas de firewall para desativação de portas vulneráveis (NetBIOS, WSD, SSDP).
+
+Deception Technology: Interface de login falsa (HTML/HTTP) projetada para capturar tentativas de intrusão.
+
+Captura de Credenciais: Extração e log de usuários e senhas tentados por atacantes.
+
+Threat Intelligence: Identificação automática da origem do invasor (Cidade, País, Provedor de Internet) via API de Geo-IP.
+
+Fingerprinting: Coleta de User-Agent para identificar o navegador ou ferramenta hacker utilizada.
+
+Alertas em Tempo Real: Notificações instantâneas enviadas via Telegram Bot API.
+
+🛠️ Tecnologias Utilizadas
+Linguagem: Python 3.13+
+
+Bibliotecas: socket, requests, os, datetime
+
+Redes: Protocolo TCP/IP, Requisições HTTP (GET/POST)
+
+APIs Externas: Telegram Bot API, IP-API (Geolocalização)
+
+Ambiente: Isolamento via venv (Virtual Environment)
+
+📦 Como Executar
+Clone o repositório:
+
+Bash
+git clone https://github.com/seu-usuario/python-sentinel.git
+cd python-sentinel
+Crie e ative o ambiente virtual:
+
+PowerShell
+python -m venv env
+.\env\Scripts\activate
+Instale as dependências:
+
+Bash
+pip install requests
+Configure suas credenciais:
+Edite o arquivo honeypot_v1.py com o seu TOKEN e CHAT_ID do Telegram.
+
+Inicie a sentinela:
+
+Bash
+python honeypot_v1.py
+📊 Exemplo de Relatório (Telegram)
+🚨 INVASOR DETECTADO! 🚨
+
+🌐 IP: 187.xx.xx.xx
+📍 Local: São Paulo, SP - Brazil (Provedor: Vivo)
+👤 Dispositivo: Mozilla/5.0 (Windows NT 10.0; Win64; x64)...
+🔑 CREDENCIAIS CAPTURADAS: user: admin | pass: 12345
+⏰ Hora: 17:45:10
+
+⚠️ Aviso Legal
+Este projeto foi desenvolvido para fins estritamente educacionais e de pesquisa em segurança cibernética. O uso desta ferramenta para atividades maliciosas é ilegal e de inteira responsabilidade do usuário.
+
+Aqui estão todas as informações que você me pediu para salvar. Se quiser mudar suas configurações, acesse a página de informações salvas.
